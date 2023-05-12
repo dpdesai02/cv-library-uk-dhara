@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - CV library Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>CV library Test</h1>
+<p>
+  Test duration: 75.137s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">uk.co.library.testsuite.JobSearchTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    1.688s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status<br/>
+from no such window<br/>
+&nbsp; (Session info: chrome=113.0.5672.93)<br/>
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [67c6f734c73cca3bc86bb5e9a532d863, maximizeCurrentWindow {}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ThinkPad\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62212/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 67c6f734c73cca3bc86bb5e9a532d863</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)<br />
+              org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:953)<br />
+              uk.co.library.browserfactory.ManageBrowser.selectBrowser(ManageBrowser.java:31)<br />
+              uk.co.library.testbase.BaseTest.setUp(BaseTest.java:13)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)<br />
+              org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)<br />
+              org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)<br />
+              org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">uk.co.library.testsuite.JobSearchTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Warehouse Operative", "London", "15 miles", "1500", "2000", "Per month", "Part Time", "Part Time Warehouse Operative jobs in London"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Bank Manager", "London", "2 miles", "45000", "55000", "Per month", "Permanent", "Permanent Bank Manager jobs in London"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Administrator", "Leeds", "10 miles", "800", "1000", "Per week", "Permanent", "Permanent Administrator jobs in Leeds"</span><br />
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">uk.co.library.testsuite.JobSearchTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    10.476s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Tester", "Harrow", "5 miles", "30000", "500000", "Per annum", "Permanent", "Permanent Tester jobs in Harrow"</span><br />
+    
+            <div class="testOutput">
+                        enter JobTitle [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //input[@id=&apos;keywords&apos;]]<br />
+                                enter Location [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //input[@id=&apos;location&apos;]]<br />
+                                select Distance [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //select[@id=&apos;distance&apos;]]<br />
+                                click On More Searc hOptionLink [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //button[@id=&apos;toggle-hp-search&apos;]]<br />
+                                enter MinSalary [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //input[@id=&apos;salarymin&apos;]]<br />
+                                enter MaxSalary [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //input[@id=&apos;salarymax&apos;]]<br />
+                                select SalaryType [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //select[@id=&apos;salarytype&apos;]]<br />
+                                select JobType [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                click On Find JobsButton [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                verify TheResults [[ChromeDriver: chrome on WINDOWS (72fb36caa83ddbc4544437b71f2c36c6)] -&gt; xpath: //h1]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    9.667s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Quality Technician", "Wales", "2 miles", "100", "500", "Per day", "Permanent", "Permanent Quality Technician jobs in Wales"</span><br />
+    
+            <div class="testOutput">
+                        enter JobTitle [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //input[@id=&apos;keywords&apos;]]<br />
+                                enter Location [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //input[@id=&apos;location&apos;]]<br />
+                                select Distance [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //select[@id=&apos;distance&apos;]]<br />
+                                click On More Searc hOptionLink [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //button[@id=&apos;toggle-hp-search&apos;]]<br />
+                                enter MinSalary [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //input[@id=&apos;salarymin&apos;]]<br />
+                                enter MaxSalary [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //input[@id=&apos;salarymax&apos;]]<br />
+                                select SalaryType [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //select[@id=&apos;salarytype&apos;]]<br />
+                                select JobType [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                click On Find JobsButton [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                verify TheResults [[ChromeDriver: chrome on WINDOWS (be4a3b334903e59750f3bb7a69f22ce6)] -&gt; xpath: //h1]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    10.878s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Automation Engineer", "London", "1 mile", "10000", "25000", "Per annum", "Permanent", "Permanent Automation Engineer jobs in London"</span><br />
+    
+            <div class="testOutput">
+                        enter JobTitle [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //input[@id=&apos;keywords&apos;]]<br />
+                                enter Location [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //input[@id=&apos;location&apos;]]<br />
+                                select Distance [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //select[@id=&apos;distance&apos;]]<br />
+                                click On More Searc hOptionLink [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //button[@id=&apos;toggle-hp-search&apos;]]<br />
+                                enter MinSalary [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //input[@id=&apos;salarymin&apos;]]<br />
+                                enter MaxSalary [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //input[@id=&apos;salarymax&apos;]]<br />
+                                select SalaryType [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //select[@id=&apos;salarytype&apos;]]<br />
+                                select JobType [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                click On Find JobsButton [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                verify TheResults [[ChromeDriver: chrome on WINDOWS (d8e9e5991ea1b1c6c197afe750244a8d)] -&gt; xpath: //h1]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyJobSearchResultUsingDifferentDataSet
+      </td>
+  <td class="duration">
+    8.731s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Accountant", "London", "5 miles", "30000", "50000", "Per month", "Contract", "Contract Accountant jobs in London"</span><br />
+    
+            <div class="testOutput">
+                        enter JobTitle [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //input[@id=&apos;keywords&apos;]]<br />
+                                enter Location [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //input[@id=&apos;location&apos;]]<br />
+                                select Distance [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //select[@id=&apos;distance&apos;]]<br />
+                                click On More Searc hOptionLink [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //button[@id=&apos;toggle-hp-search&apos;]]<br />
+                                enter MinSalary [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //input[@id=&apos;salarymin&apos;]]<br />
+                                enter MaxSalary [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //input[@id=&apos;salarymax&apos;]]<br />
+                                select SalaryType [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //select[@id=&apos;salarytype&apos;]]<br />
+                                select JobType [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                click On Find JobsButton [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //select[@id=&apos;tempperm&apos;]]<br />
+                                verify TheResults [[ChromeDriver: chrome on WINDOWS (379a37327475a25d36d64bc5625dc0ee)] -&gt; xpath: //h1]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
